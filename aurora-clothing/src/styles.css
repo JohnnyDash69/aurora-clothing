@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@300;400;700&display=swap");
+
+.header {
+  font-family: "Orbitron", sans-serif;
+  text-align: center;
+  padding: 20px;
+  color: white;
+  background: linear-gradient(
+    90deg,
+    #001f3f,
+    #0074d9,
+    #39cccc,
+    #b10dc9,
+    #ff4136
+  );
+  background-size: 400% 400%;
+  animation: aurora 10s infinite alternate ease-in-out;
+}
+
+@keyframes aurora {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.logo {
+  width: 120px; /* Adjust as needed */
+  height: auto;
+}
+
+/* Navigation Menu */
+.nav-menu {
+  background: rgba(0, 0, 0, 0.8); /* Dark semi-transparent background */
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-menu li {
+  display: inline;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #c3eaff; /* Light blue aurora-inspired color */
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+}
+
+.nav-menu a:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(58, 123, 213, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  color: #000;
+  box-shadow: 0 0 10px rgba(0, 212, 255, 0.8);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .nav-menu ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-menu a {
+    display: block;
+    padding: 12px;
+  }
+}
+
+.landing-page {
+  text-align: center;
+  padding: 20px;
+}
+
+.product-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+..product {
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  color: rgb(255, 253, 253);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 300px;
+  margin: 20px auto;
+  box-shadow: 0px 4px 10px rgba(243, 106, 106, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+.product:hover {
+  transform: scale(1.05);
+}
+
+.product-image {
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.product-name {
+  font-size: 1.4rem;
+  margin: 10px 0;
+}
+
+.product-price {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #4caf50;
+}
+
+/* Apply the custom font globally */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Style the paragraph with more info about the brand */
+.brand-description {
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #333;
+  margin-top: 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-weight: 400;
+}
+
+.interest-calculator {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+.interest-calculator label {
+  display: block;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.interest-calculator input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+.interest-calculator button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.interest-calculator .result {
+  margin-top: 15px;
+  padding: 10px;
+  background: #e3f2fd;
+  border-radius: 5px;
+}
